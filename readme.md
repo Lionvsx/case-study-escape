@@ -16,13 +16,13 @@ These instructions will get you a copy of the project up and running on your loc
 First, clone the repository:
 
 ```bash
-git clone https://github.com/lionvsc/escape-case-study.git
+git clone https://github.com/lionvsc/case-study-escape.git
 ```
 
 Then, navigate to the project folder and install the required packages:
 
 ```bash
-cd ./escape-case-study
+cd ./case-study-escape
 pip install -r requirements.txt
 ```
 
