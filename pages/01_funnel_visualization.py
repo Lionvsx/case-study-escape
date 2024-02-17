@@ -37,7 +37,7 @@ def format_data(df):
 format_data(df_raw)
 format_data(df_priority)
 
-selected_df = st.sidebar.selectbox('Select the dataframe', ('All data', 'Data without personal emails'))
+selected_df = st.sidebar.selectbox('Select the dataframe', ('All data', 'Cleaned data without personal emails'))
 
 funnel_steps = ['Visited Website', 'Demo Booked', 'Demo Done', 'Meeting Planned', 'POC Started']
 funnel_counts = [df_raw[step].sum() for step in funnel_steps]
@@ -65,6 +65,8 @@ fig = go.Figure(go.Funnel(
 ))
 
 st.plotly_chart(fig)
+
+st.sidebar.subheader('Filters for the second graph')
 
 selected_industry = st.sidebar.selectbox('Select the industry', sorted(df_raw['Industry'].unique()))
 selected_role = st.sidebar.selectbox('Select the role', sorted(df_raw['Role'].unique()))
