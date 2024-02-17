@@ -87,7 +87,7 @@ fig_filtered = go.Figure(go.Funnel(
     y = funnel_steps,
     x = funnel_percentages_filtered,
     textposition = "inside",
-    textinfo = "value+percent initial",
+    textinfo = "percent initial",
     opacity = 0.65,
     marker = {
         "line": {"width": [4, 2, 2, 3, 1], "color": ["wheat", "wheat", "wheat", "wheat", "wheat"]}
